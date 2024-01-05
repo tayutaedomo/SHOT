@@ -585,7 +585,7 @@ file(
 )
 
 # Creates the SHOT library that is linked to the executable
-add_library(SHOTSolver SHARED ${SOURCES})
+add_library(SHOTSolver STATIC ${SOURCES})
 
 # Links the compiled libraries
 target_link_libraries(SHOTSolver SHOTHelper)
